@@ -1,6 +1,6 @@
 # AI Template Bootstrap
 
-This repository contains a reusable `.ai` bootstrap structure for new projects.
+This repository contains a reusable `.ai` bootstrap structure for new projects. See [.ai/README.md](.ai/README.md).
 
 ## Included structure
 
