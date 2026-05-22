@@ -1,0 +1,45 @@
+version: 1
+template:
+  name: ai-bootstrap
+  description: Minimal reusable .ai workspace for new projects.
+  updated: 2026-05-22
+
+prompts:
+  start_session: .ai/prompts/start-session.md
+  end_session: .ai/prompts/end-session.md
+
+context:
+  architecture: .ai/context/architecture.md
+  conventions: .ai/context/conventions.md
+  glossary: .ai/context/glossary.md
+
+memory:
+  active_focus: .ai/memory/active-focus.md
+  log: .ai/memory/log.md
+
+decisions:
+  directory: .ai/decisions
+  naming: YYYYMMDD-topic.md
+  starter: .ai/decisions/YYYYMMDD-placeholder.md
+
+failures:
+  directory: .ai/failures
+  naming: YYYYMMDD-topic.md
+  starter: .ai/failures/YYYYMMDD-placeholder.md
+
+policies:
+  coding_style: .ai/policies/coding-style.md
+
+skills:
+  - name: ai-janitor
+    config: .ai/skills/ai-janitor/skill.yaml
+    guide: .ai/skills/ai-janitor/skill.md
+  - name: docs
+    config: .ai/skills/docs/skill.yaml
+    guide: .ai/skills/docs/skill.md
+  - name: memento
+    config: .ai/skills/memento/skill.yaml
+    guide: .ai/skills/memento/skill.md
+  - name: theory-of-mind
+    config: .ai/skills/theory-of-mind/skill.yaml
+    guide: .ai/skills/theory-of-mind/skill.md
