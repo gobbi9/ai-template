@@ -4,10 +4,10 @@ Maintain session memory for ongoing work.
 
 ## Update targets
 
-- `.ai/memory/active-focus.md`
-- `.ai/memory/log.md`
-- Decision notes in `.ai/decisions/YYYYMMDD-topic.md` when needed
-- Failure notes in `.ai/failures/YYYYMMDD-topic.md` when needed
+- `.agents/memory/active-focus.md`
+- `.agents/memory/log.md`
+- Decision notes in `.agents/decisions/YYYYMMDD-topic.md` when needed
+- Failure notes in `.agents/failures/YYYYMMDD-topic.md` when needed
 
 ## Guidance
 

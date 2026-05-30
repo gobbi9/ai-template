@@ -1,0 +1,3 @@
+name: docs
+description: Update root README.md only when session changes include files outside .agents.
+version: 1

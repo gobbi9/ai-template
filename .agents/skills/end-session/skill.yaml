@@ -1,0 +1,3 @@
+name: end-session
+description: Close a work session by updating memory, optional decision/failure notes, and manifest metadata.
+version: 1

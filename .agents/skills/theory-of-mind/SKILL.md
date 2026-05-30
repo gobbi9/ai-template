@@ -11,12 +11,12 @@ Seed project context from historical conversations, logs, and old threads.
 
 ## Update targets
 
-- `.ai/context/architecture.md`
-- `.ai/context/conventions.md`
-- `.ai/context/glossary.md`
-- `.ai/memory/log.md`
-- `.ai/decisions/*.md` (as needed)
-- `.ai/failures/*.md` (as needed)
+- `.agents/context/architecture.md`
+- `.agents/context/conventions.md`
+- `.agents/context/glossary.md`
+- `.agents/memory/log.md`
+- `.agents/decisions/*.md` (as needed)
+- `.agents/failures/*.md` (as needed)
 
 ## Guidance
 

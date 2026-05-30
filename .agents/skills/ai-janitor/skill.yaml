@@ -1,0 +1,3 @@
+name: ai-janitor
+description: Keep .agents metadata and references accurate after .agents changes.
+version: 1

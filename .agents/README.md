@@ -1,22 +1,19 @@
-# .ai Workspace Guide
+# .agents Workspace Guide
 
-This file documents prompts, skills, and core artifacts under `.ai` for this bootstrap template.
-
-## Prompts
-
-- `prompts/start-session.md`: session bootstrap prompt that loads project context, memory, policy, and decision notes.
-- `prompts/end-session.md`: session close-out prompt that updates memory artifacts, optional decision/failure notes, and refreshes `manifest.yaml`.
+This file documents skills and core artifacts under `.agents` for this bootstrap template.
 
 ## Skills
 
-- `skills/memento/skill.md`: maintains session-to-session memory continuity.
-- `skills/theory-of-mind/skill.md`: seeds context and memory from historical threads/logs.
-- `skills/ai-janitor/skill.md`: keeps `.ai/manifest.yaml` synchronized with `.ai` structure changes.
-- `skills/docs/skill.md`: updates root `README.md` only when non-`.ai` files changed.
+- `skills/start-session/SKILL.md`: session bootstrap skill that loads project context, memory, policy, and related notes.
+- `skills/end-session/SKILL.md`: session close-out skill that updates memory artifacts, optional decision/failure notes, and refreshes `manifest.yaml`.
+- `skills/memento/SKILL.md`: maintains session-to-session memory continuity.
+- `skills/theory-of-mind/SKILL.md`: seeds context and memory from historical threads/logs.
+- `skills/ai-janitor/SKILL.md`: keeps `.agents/manifest.yaml` synchronized with `.agents` structure changes.
+- `skills/docs/SKILL.md`: updates root `README.md` only when non-`.agents` files changed.
 
 ## Core Files
 
-- `manifest.yaml`: canonical index of `.ai` structure and skill metadata.
+- `manifest.yaml`: canonical index of `.agents` structure and skill metadata.
 - `context/architecture.md`: architecture summary, boundaries, and system-level concerns.
 - `context/conventions.md`: engineering and collaboration conventions.
 - `context/glossary.md`: project terminology and acronyms.
@@ -32,7 +29,7 @@ This file documents prompts, skills, and core artifacts under `.ai` for this boo
 
 ```mermaid
 graph LR
-  start["prompts/start-session.md"] --> memento["skills/memento/skill.md"]
+  start["skills/start-session/SKILL.md"] --> memento["skills/memento/SKILL.md"]
   start --> architecture["context/architecture.md"]
   start --> conventions["context/conventions.md"]
   start --> glossary["context/glossary.md"]
@@ -46,9 +43,9 @@ graph LR
 
 ```mermaid
 graph LR
-  endSession["prompts/end-session.md"] --> memento["skills/memento/skill.md"]
-  endSession --> janitor["skills/ai-janitor/skill.md"]
-  endSession --> docs["skills/docs/skill.md"]
+  endSession["skills/end-session/SKILL.md"] --> memento["skills/memento/SKILL.md"]
+  endSession --> janitor["skills/ai-janitor/SKILL.md"]
+  endSession --> docs["skills/docs/SKILL.md"]
 
   memento --> active["memory/active-focus.md"]
   memento --> log["memory/log.md"]
